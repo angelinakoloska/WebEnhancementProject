@@ -92,6 +92,7 @@ section h2 {
 
 section p {
     line-height: 1.5;
+    font-size: 1rem;
 }
 
 section a {
@@ -113,6 +114,7 @@ section a:hover {
 
 .info-item .info-title {
     font-weight: bold;
+    /* font-size: 1.25rem; */
 }
 
 .info-item .info-text {
@@ -195,6 +197,10 @@ summary {
     font-size: 22px;
     color: #fff;
 
+}
+
+.leader .card .name {
+    text-decoration: underline;
 }
 .leader .card .card-image img {
     width: 100px;
@@ -397,9 +403,9 @@ footer a {
         flex-direction: column;
         gap: 1rem;
     }
-
-    .info-item {
-        text-align: center;
+ 
+    .info-item .info-text {
+        font-size: 1.15rem;
     }
 
     .program-grid {
