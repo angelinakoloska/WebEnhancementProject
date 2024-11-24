@@ -426,13 +426,9 @@ footer a {
         font-size: 0.9rem;
     }
 
-    .other-programs td {
-        text-align: center;
-    }
-
     .other-programs th, .other-programs td {
         font-size: 0.9rem;
-        padding: 0.25rem;
+        /* padding: 0.25rem; */
     }
 
     .student-stories {
