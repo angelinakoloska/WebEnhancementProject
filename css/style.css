@@ -223,15 +223,8 @@ summary {
 
 }
 
-.other-programs th {
-    text-align: left;
-}
-
-.other-programs td {
-    text-align: center;
-}
-
 .other-programs th, .other-programs td {
+    text-align: left;
     word-wrap: break-word;
     padding: 0.5rem;
     font-size: 1rem;
@@ -431,6 +424,10 @@ footer a {
 
     .other-programs table {
         font-size: 0.9rem;
+    }
+
+    .other-programs td {
+        text-align: center;
     }
 
     .other-programs th, .other-programs td {
