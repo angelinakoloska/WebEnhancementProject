@@ -8,12 +8,8 @@
 </head>
 <body>
     <header>
-        <nav aria-label="Main navigation">
+        <nav">
             <a href="./index.html" aria-label="Til forsiden"><img src="./images/oslomet-logo.svg" alt="Oslomet logo" id="logo"></a>
-            <input type="checkbox" id="hamburger" aria-hidden="true">
-            <label for="hamburger" aria-label="Åpne meny">
-                <i class="fa-solid fa-bars" aria-hidden="true"></i>
-            </label>
             <ul>
                 <li><a href="./index.html">Hjem</a></li>
                 <li><a href="./accessibility.html">Tilgjengelighet</a></li>
@@ -24,17 +20,35 @@
     </header>
     <main>
         <h1>Tilgjengelighet</h1>
-        <p>Tilgjengelighet omhandler at alle </p>
         <section>
-            <h2>Collaboration in GitHub</h2>
-            <p></p>
+            <h2>Hva er tilgjengelighet?</h2>
+            <p>
+                Tilgjengelighet handler om at alle skal kunne bruke en digital løsning, uavhengig om man har en nedsatt funksjonsevne eller ikke. Det vil si at den digitale løsningen, for eksempel en nettside skal kunne bli benyttet av personer med ulike behov, som hørselstap, synshemninger, motoriske utfordringer eller kognitive funksjonsnedsettelser. For å lage et mer inkluderende nettsted er det derfor viktig, at vi implementer prinsipper for universell utforming.
+            </p>
         </section>
         <section>
-            <h2>Commit history</h2>
-            <p></p>
+            <h2>Automatisert testing</h2>
+            <p>Vi benyttet oss av verktøyet Google Lighthouse for å teste tilgjenligheten på nettsiden vår. Google Lighthouse gir en omfattende evaluering om nettsiden møter kravene for universell utformingen og gir tilbakemeldinger på områder hvor det kan forbedres. Gjennom testene fikk vi gode resultater på områder som semantisk HTML og tastaturnavigasjon og fargekontrast. Testen viste områder hvor det burde forbedres, som manglende alt-attributer på noen av bildene. Basert på tilbakemeldingene implementerte vi nødvendige semantiske elementer i HTML-koden for å rette opp mangler og sikre en bedre brukeropplevelse.</p>
         </section>
         <section>
-            <h2>Specific changes</h2>
+            <h2>Kodevalg</h2>
+            <p>For å sikre at nettsiden vår var universelt utformet, passet vi godt på å ha med semantiske elementer i html-koden vår slik som<code>&lt;header&gt;</code>, <code>lt;section&gt;</code>, <nav> og <footer>. Dette hjelper skjermlesere med å forstå strukturen på nettsiden og gir brukere en mer logisk navigasjonsopplevelse. Vi sørget for at alle interaktive elementer som knapper og lenker, hadde meningsfulle etiketter og fokusindikatorer.</p>
+        </section>
+        <section>
+            <h2>Fargekontrast</h2>
+            <p>Tekst- og bakgrunnsfarger er nøye valgt for å oppfylle WCAG-retningslinjer for tilstrekkelig kontrast. Dette sikrer god lesbarhet, spesielt for brukere som har utfordringer med synet eller fargeblindhet, og i tillegg gir en mer inkluderende visuell opplevelse. Gjennom manuell testing bekreftet vi at kontrastforholdene var tilfredsstillende på alle deler av nettsiden.</p>
+        </section>
+        <section>
+            <h2>Tastaturnavigasjon</h2>
+            <p>Manuelle tester bekreftet at alle lenker og knapper er tilgjengelige via tastaturnavigasjon, med tydelige fokusindikatorer for interaktive elementer, slik at brukere som navigerer med tastatur enkelt kan se hvor de er på siden.</p>
+        </section>
+        <section>
+            <h2>Alternativ tekst</h2>
+            <p>Alle bilder inkluderer beskrivende alt-attributter, som sikrer at brukere av skjermlesere får meningsfull tilgang til visuelt innhold. Dette er viktig for brukere som ikke kan se bildene og i stedet trenger en beskrivelse av innholdet. Dette er også igjen med på å bedre brukeropplevelsen av nettsiden.</p>
+        </section>
+        <section>
+            <h2>Ytterlige betraktninger</h2>
+            <p>I tillegg til automatisert testing, gjennomførte vi også en manuell testing for å faktisk sikre logisk tabulatorrekkefølge og god styring av fokus. Disse testene supplerte de automatiske resultatene og bekreftet at siden var brukervennlig for personer som er avhengig av hjelpelpemiddelteknologi eller tastaturnavigasjon. Skjermbilder fra Google Lighthouse er inkludert som dokumentasjon for testene og resultatene vi oppnådde.</p>
         </section>
     </main>
 </body>
