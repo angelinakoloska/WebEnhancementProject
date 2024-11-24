@@ -364,3 +364,28 @@ footer a {
     color: #000;
     text-decoration: none;
 }
+
+/* Media queries */
+
+/* for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    footer .useful-links {
+        text-align: center;
+    }
+    
+    footer .contact-information, footer .useful-links, footer .social-links {
+        margin: 0 auto;
+    }
+}
