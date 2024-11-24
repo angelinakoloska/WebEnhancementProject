@@ -237,9 +237,6 @@ summary {
     color: #000;
 }
 
-.other-programs thead th {
-    text-align: left;
-}
 
 .other-programs tbody tr {
     border-bottom: 1px solid #fff;
@@ -411,16 +408,6 @@ footer a {
     .program-grid .program-content {
         padding: 1rem;
     }
-/* 
-    .leader .card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .leader .card .card-image img {
-        width: 80px;
-    } */
 
     .other-programs table {
         font-size: 0.9rem;
