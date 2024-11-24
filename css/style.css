@@ -44,10 +44,6 @@ main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
-    /* max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    text-align: left; */
 }
 
 .hero {
@@ -152,8 +148,6 @@ summary {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin: 1rem;
-    /* max-width: 850px; */
-
 }
 
 .program-grid .program-content {
@@ -221,7 +215,6 @@ summary {
     display: block;
     width: 100%;
     overflow: auto;
-    table-layout: auto;
     border-collapse: collapse;
 }
 .other-programs table caption {
@@ -230,9 +223,16 @@ summary {
 
 }
 
+.other-programs th {
+    text-align: left;
+}
+
+.other-programs td {
+    text-align: center;
+}
+
 .other-programs th, .other-programs td {
     word-wrap: break-word;
-    text-align: left;
     padding: 0.5rem;
     font-size: 1rem;
 }
